@@ -1,0 +1,13 @@
+#range teller fra 0, da det er standard.
+#slik at start, stop og step må reduseres med -1
+#for hver bokstav/letter den fører opp. Derfor en nytekst det samme som inntekst -1
+#vi bruker da nytekst=nytekst+innstekst(input) for å rangere(range)
+#hver letter, bruker da array for å for å si at den skal rangere letters.
+
+nytekst=""
+inntekst=input("skriv en tekst og se hva det blir baklengs!")
+for letter in range(len(inntekst)-1,-1,-1):
+	nytekst=nytekst+inntekst[letter]
+
+print(nytekst)
+print("")
